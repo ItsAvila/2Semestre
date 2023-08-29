@@ -1,0 +1,117 @@
+#Codigos 2° Semestre
+
+_TDE_
+
+1  - Lista 1 (Exercicios)
+
+
+
+
+
+
+
+
+2 - Lista 2 (Exercicios)
+
+3) import java.util.Scanner;
+
+public class Exercicio3{
+    public static void main(String args[]){
+        Scanner in = new Scanner(System.in);
+        
+        double altura, pesoideal;
+        int sexo;
+        
+        System.out.println("Qual sua altura? ");
+        altura = in.nextDouble();
+        System.out.println("Qual seu genero? 1 - Feminino / 2 - Masculino");
+        sexo = in.nextInt();
+        
+        if (sexo == 1){
+            pesoideal = 62.1 * altura - 44.7;
+            System.out.println("Peso ideal para feminino é: " + pesoideal);
+        } 
+        if (sexo == 2){
+            pesoideal = 72.7 * altura - 58;
+            System.out.println("Peso ideal masculino é: " + pesoideal);
+        }
+    }
+}
+
+4) import java.util.Scanner;
+
+public class Exercicio4{
+    public static void main(String args[]){
+        Scanner in = new Scanner(System.in);
+        
+        int valor, zero, positivo, negativo, pequeno, grande;
+        
+        System.out.println("Escreva um valor real:");
+        valor = in.nextInt();
+        
+        if (valor == 0){
+            System.out.println("O seu valor real é zero");
+        }
+        if (valor >= 0){
+            System.out.println("O seu valor é positivo");
+        }
+        if (valor <= 0){
+            System.out.println("O seu valor é negativo");
+        }
+        if (Math.abs(valor) < 1){
+            System.out.println("O seu valor é pequeno");
+        }
+        if (valor > 1000000){
+            System.out.println("O seu valor é grande");
+        }
+    }
+}
+
+6) import java.util.Scanner;
+
+public class Exercicio6{
+    public static void main(String args[]){
+        Scanner in = new Scanner(System.in);
+        
+        double saldo, conta;
+        
+        System.out.println("Digite o seu saldo atual: ");
+        saldo = in.nextDouble();
+        
+        if (saldo < 500){
+            System.out.println("Não há limite");
+        }
+        if (saldo >= 500 && saldo < 1000){
+            System.out.println("8% do saldo medio");
+        }
+        if (saldo >= 1000){
+            System.out.println("15% do saldo medio");
+        }
+    }
+}
+
+7) import java.util.Scanner;
+
+public class Exercicio7{
+    public static void main(String args[]){
+        Scanner in = new Scanner(System.in);
+        
+        double custo;
+        
+        System.out.println("Qual o preço de custo: ");
+        custo = in.nextDouble();
+        
+        if ( custo < 10 ){
+            System.out.println("O seu lucro foi de 70%");
+        }
+        if ( custo >= 10 && custo < 30){
+            System.out.println("O seu lucro foi de 50%");
+        }
+        if ( custo >= 30 && custo < 50){
+            System.out.println("O seu lucro foi de 40%");
+        }
+        if ( custo >= 50 ){
+            System.out.println("O seu lucro foi de 30%");
+        }
+    }
+}
