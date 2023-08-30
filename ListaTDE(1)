@@ -1,1 +1,38 @@
+_Lista 1 TDE_
 
+4) import java.util.Scanner;
+
+public class Exercicio4{
+    public static void main(String args[]){
+        Scanner in = new Scanner(System.in);
+        
+        double raio, area;
+        System.out.println("Qual o valor do raio:");
+        raio = in.nextDouble();
+        
+        area = (4 * 3.14 * (raio * raio));
+        System.out.println("A sua area é de: " + area);
+    }
+}
+
+5)import java.util.Scanner;
+
+public class Exercicio5{
+    public static void main(String args[]){
+        Scanner in = new Scanner(System.in);
+         
+         
+         double valor, n2, n3, n4;
+         
+         System.out.println("Qual o valor de N ?");
+         valor = in.nextDouble();
+         
+         n2 = (valor * valor);
+         n3 = (n2 * valor);
+         n4 = (n3 * valor);
+         
+         System.out.println("O valor de n2 é: " + n2);
+         System.out.println("O valor de n3 é: " + n3);
+         System.out.println("O valor de n4 é: " + n4);
+    }
+}
