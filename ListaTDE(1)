@@ -36,3 +36,75 @@ public class Exercicio5{
          System.out.println("O valor de n4 é: " + n4);
     }
 }
+
+6) import java.util.Scanner;
+
+public class Exercicio6{
+    public static void main(String args[]){
+        Scanner in = new Scanner(System.in);
+         
+         double fahr, celsius;
+         
+         System.out.println("Qual a temperatura em Fahrenheit ? ");
+         fahr = in.nextDouble();
+         
+         celsius = (fahr - 32) * 5 / 9;
+         System.out.println("A sua temperatura em Celsius é : " + celsius);
+    }
+}
+
+7)import java.util.Scanner;
+
+public class Exercicio7{
+    public static void main(String args[]){
+        Scanner in = new Scanner(System.in);
+         
+         int a, b, soma, diferenca;
+         double media, maior, menor;
+         
+         System.out.println("Qual o valor de a? ");
+         a = in.nextInt();
+         System.out.println("Qual o valor de b? ");
+         b = in.nextInt();
+         
+         soma = a + b;
+         diferenca = a - b;
+         media = a / b;
+         maior = (soma + diferenca) / 2;
+         menor = (soma - (diferenca)) / 2;
+         
+         System.out.println("A soma é: " + soma);
+         System.out.println("A diferença é: " + diferenca);
+         System.out.println("A media é: " + media);
+         System.out.println("O maior é: " + maior);
+         System.out.println("O menor é: " + menor);
+
+    }
+}
+
+8) import java.util.Scanner;
+
+public class Exercicio8{
+    public static void main(String args[]){
+        Scanner in = new Scanner(System.in);
+       
+       double largura_terreno, comprimento_terreno, largura_casa, comprimento_casa;
+       System.out.println("Qual a largura do terreno? ");
+       largura_terreno = in.nextDouble();
+       System.out.println("Qual o comprimento do terreno? ");
+       comprimento_terreno = in.nextDouble();
+       
+
+       System.out.println("Qual a largura da casa? ");
+       largura_casa = in.nextDouble();
+       System.out.println("Qual o comprimento da casa? ");
+       comprimento_casa = in.nextDouble();
+       
+       double largura_livre, comprimento_livre;
+       largura_livre = (largura_terreno - largura_casa);
+       comprimento_livre = (comprimento_terreno - comprimento_casa);
+      
+       System.out.println("O terreno possui " + largura_livre + "de terreno livre");
+       System.out.println("O terreno possui " + comprimento_livre + " de comprimento livre");
+    }
+}
