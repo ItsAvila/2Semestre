@@ -23,7 +23,6 @@ public class Exercicio5{
          
          
          double valor, n2, n3, n4;
-         
          System.out.println("Qual o valor de N ?");
          valor = in.nextDouble();
          
@@ -44,7 +43,6 @@ public class Exercicio6{
         Scanner in = new Scanner(System.in);
          
          double fahr, celsius;
-         
          System.out.println("Qual a temperatura em Fahrenheit ? ");
          fahr = in.nextDouble();
          
@@ -94,7 +92,6 @@ public class Exercicio8{
        System.out.println("Qual o comprimento do terreno? ");
        comprimento_terreno = in.nextDouble();
        
-
        System.out.println("Qual a largura da casa? ");
        largura_casa = in.nextDouble();
        System.out.println("Qual o comprimento da casa? ");
