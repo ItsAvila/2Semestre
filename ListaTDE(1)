@@ -105,3 +105,41 @@ public class Exercicio8{
        System.out.println("O terreno possui " + comprimento_livre + " de comprimento livre");
     }
 }
+
+9) import java.util.Scanner;
+
+public class Exercicio9{
+    public static void main(String args[]){
+        Scanner in = new Scanner(System.in);
+       
+      double altura, m, c, mili;
+      System.out.println("Qual a sua altura ? (Em M)");
+      altura = in.nextDouble();
+      
+      c = altura * 100;
+      mili = c * 10;
+      System.out.println("A sua altura em centimentros é: " + c);
+      System.out.println("A sua altura em milimetros é: " + mili);
+    }
+}
+
+10)import java.util.Scanner;
+
+public class Exercicio10{
+    public static void main(String args[]){
+        Scanner in = new Scanner(System.in);
+       
+       double horas, minutos, segundos;
+       
+       System.out.println("Digite o tempo em segundos do seu evento: ");
+       segundos = in.nextDouble();
+       
+       horas = segundos / 3600;
+       minutos = segundos / 60;
+       segundos = segundos;
+       
+       System.out.println("O evento em horas é: " + horas);
+       System.out.println("O evento em minutos é: " + minutos);
+       System.out.println("O evento em segundos é: " + segundos);
+    }
+}
