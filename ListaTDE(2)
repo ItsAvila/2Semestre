@@ -137,3 +137,28 @@ public class Exercicio8{
         }
     }
 }
+
+9)import java.util.Scanner;
+
+public class Exercicio9{
+    public static void main(String args[]){
+    Scanner in = new Scanner(System.in);
+    
+    int temperatura, valor, celsius, fahr, solido, liquido, gasoso; 
+
+    System.out.println("Qual o valor da temperatura da agua? ");
+    valor = in.nextInt();
+    
+    System.out.println("Use 1 - Celsius  ,   2 - Fahrenheit");
+    temperatura = in.nextInt();
+    
+    if (temperatura == 1){
+        celsius = (valor - 32) * 5 / 9;
+        System.out.println("Sua temperatura em Celsius é " + celsius);
+    }
+    if (temperatura == 2){
+        fahr = (valor * 5 / 9) + 32;
+        System.out.println("Sua temperatura em Fahrenheit é: " + fahr);
+    }
+  }
+}
