@@ -162,3 +162,32 @@ public class Exercicio9{
     }
   }
 }
+
+10) import java.util.Scanner;
+
+public class Exercicio10{
+    public static void main(String args[]){
+    Scanner in = new Scanner(System.in);
+    
+    double nota, a, b, c, d, e;
+    
+    System.out.println("Qual a sua nota? ");
+    nota = in.nextDouble();
+    
+    if(nota < 3){
+        System.out.println("Conceito E");
+    }
+    if(nota >= 3 && nota <= 4.9){
+        System.out.println("Conceito D");
+    }
+    if(nota >= 5 && nota <= 6.9){
+        System.out.println("Conceito C");
+    }
+    if(nota >= 7 && nota <= 8.9){
+        System.out.println("Conceito B");
+    }
+    if(nota >= 9 && nota <= 10){
+        System.out.println("Conceito A");
+    }
+  }
+}
