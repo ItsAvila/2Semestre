@@ -191,3 +191,58 @@ public class Exercicio10{
     }
   }
 }
+
+15)import java.util.Scanner;
+
+public class Exercicio15 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Digite o primeiro valor (n1): ");
+        double n1 = input.nextDouble();
+
+        System.out.print("Digite o segundo valor (n2): ");
+        double n2 = input.nextDouble();
+
+        System.out.print("Digite o terceiro valor (n3): ");
+        double n3 = input.nextDouble();
+
+        System.out.print("Digite a opção (1 para crescente, 2 para decrescente, 3 para maior no meio): ");
+        int opcao = input.nextInt();
+
+        switch (opcao) {
+            case 1:
+                if (n1 <= n2 && n1 <= n3) {
+                    System.out.println(n1 + ", " + (n2 <= n3 ? n2 + ", " + n3 : n3 + ", " + n2));
+                } else if (n2 <= n1 && n2 <= n3) {
+                    System.out.println(n2 + ", " + (n1 <= n3 ? n1 + ", " + n3 : n3 + ", " + n1));
+                } else {
+                    System.out.println(n3 + ", " + (n1 <= n2 ? n1 + ", " + n2 : n2 + ", " + n1));
+                }
+                break;
+            case 2:
+                if (n1 >= n2 && n1 >= n3) {
+                    System.out.println(n1 + ", " + (n2 >= n3 ? n2 + ", " + n3 : n3 + ", " + n2));
+                } else if (n2 >= n1 && n2 >= n3) {
+                    System.out.println(n2 + ", " + (n1 >= n3 ? n1 + ", " + n3 : n3 + ", " + n1));
+                } else {
+                    System.out.println(n3 + ", " + (n1 >= n2 ? n1 + ", " + n2 : n2 + ", " + n1));
+                }
+                break;
+            case 3:
+                if (n1 >= n2 && n1 >= n3) {
+                    System.out.println(n2 + ", " + n1 + ", " + n3);
+                } else if (n2 >= n1 && n2 >= n3) {
+                    System.out.println(n1 + ", " + n2 + ", " + n3);
+                } else {
+                    System.out.println(n1 + ", " + n3 + ", " + n2);
+                }
+                break;
+            default:
+                System.out.println("Opção inválida.");
+        }
+
+        input.close();
+    }
+}
+
