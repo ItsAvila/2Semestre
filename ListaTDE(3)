@@ -1,2 +1,54 @@
 _3 - Lista 3 TDE_
 
+2) public class Main{
+    public static void main(String args[]){
+        
+        for(int i = 1000; i <= 2000; i += 2){
+          System.out.println(i);
+            
+        }
+    }
+}
+
+3) public class Main{
+    public static void main(String args[]){
+        
+        int soma = 0;
+        
+        for(int i = 501; i < 700; i+=2){
+            soma += i;
+        }
+       System.out.println("A soma dos impares entre 500 e 700 é: " + soma);
+    }
+}
+
+4) public class Main{
+    public static void main(String args[]){
+        
+     for(int i = 0; i < 100; i++){
+         int quadrado = i * i;
+         System.out.println(quadrado);
+     }
+   }
+}    
+
+5)import java.util.Scanner;
+
+public class Main{
+    public static void main(String args[]){
+     Scanner in = new Scanner(System.in);
+     
+     int n;
+     
+     System.out.println("Qual o valor de N? ");
+     n = in.nextInt();
+     System.out.println("Os quadrados perfeitos menores que " + n + " são: ");
+     
+     for ( int i = 1; i * i < n; i ++){
+         int quadrado = i * i;
+         System.out.println(quadrado);
+     }
+    }
+}
+
+60
