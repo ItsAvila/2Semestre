@@ -79,4 +79,75 @@ public class Main{
     }
 }
 
-8)
+9)import java.util.Scanner;
+
+public class Lista3Exercicio9 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite o valor de 'a': ");
+        int a = scanner.nextInt();
+
+        System.out.print("Digite o valor de 'b': ");
+        int b = scanner.nextInt();
+
+        int somaPares = 0;
+
+        for (int i = a; i <= b; i++) {
+            if (i % 2 == 0) {
+                somaPares += i;
+            }
+        }
+
+        System.out.println("A soma dos números pares entre " + a + " e " + b + " é: " + somaPares);
+
+        scanner.close();
+    }
+}
+
+10)import java.util.Scanner;
+
+public class Lista3Exercicio10 {
+    public static void main(String args[]){
+        Scanner in = new Scanner(System.in);
+
+
+        int numero; int somatorio = 0; int fatorial = 1;
+
+        do{
+            System.out.print("Digite o valor inteiro e não negativo: ");
+            numero = in.nextInt();
+        }  while(numero < 0);
+        for(int i = 1; i <= numero; i ++){
+            fatorial *= i;
+            somatorio += i;
+        }
+        System.out.println(fatorial);
+        System.out.println(somatorio);
+      
+        in.close();
+    }
+}
+
+11)import java.util.Scanner;
+
+public class Lista3Exercicio11 {
+    public static void main(String args[]){
+        Scanner in = new Scanner(System.in);
+
+
+        int valor;
+        do{
+           System.out.printf("Digite um valor inteiro e positivo:");
+           valor = in.nextInt();
+        } while(valor <= 0 );
+        
+        for(int i = 1; i <= valor; i ++){
+            if (valor % i == 0){
+            System.out.println(i);
+        }
+        in.close();
+      }
+    }
+}
+
